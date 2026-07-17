@@ -1,14 +1,18 @@
 .page {
-  min-height: 100vh;
-  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--cream);
+  overflow: hidden;
 }
 
 .headline {
-  padding: clamp(2rem, 6vh, 4rem) 1.5rem 0.5rem;
+  flex: 0 0 auto;
+  padding: clamp(1.5rem, 4vh, 3rem) 1.5rem 0.25rem;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .headline h1 {
@@ -27,8 +31,10 @@
 }
 
 .gallery {
-  flex: 1;
-  min-height: 60vh;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  position: relative;
 }
 
 .empty {

@@ -17,7 +17,7 @@ export default function App() {
         <p>from The Duggans</p>
       </header>
 
-      <div className="gallery">
+      <div className="gallery" style={{ width: '100%', height: '100%' }}>
         {images.length === 0 ? (
           <div className="empty">Add photos to public/photos to fill the dome.</div>
         ) : (
