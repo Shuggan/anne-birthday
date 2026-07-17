@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Camera originals live here untracked; the web copies are in public/photos.
+*.heic
+*.HEIC
