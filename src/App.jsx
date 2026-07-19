@@ -14,7 +14,7 @@ export default function App() {
     <div className="page">
       <header className="headline">
         <h1>Happy Birthday Anne!</h1>
-        <p>from The Duggans</p>
+        <p>from Nana, Papa, Dermie, and The Singapore Duggans</p>
       </header>
 
       <div className="gallery" style={{ width: '100%', height: '100%' }}>
@@ -31,7 +31,12 @@ export default function App() {
             grayscale={false}
             overlayBlurColor={CREAM}
             imageBorderRadius="20px"
-            openedImageBorderRadius="20px"
+            openedImageBorderRadius="16px"
+            padFactor={0.03}
+            openedImageWidth="100%"
+            openedImageHeight="100%"
+            autoRotate
+            autoRotateSpeed={0.1}
           />
         )}
       </div>
